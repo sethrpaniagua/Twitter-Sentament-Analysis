@@ -1,8 +1,4 @@
 # Twitter-Sentament-Analysis
-This will serve as a repo for our project 
-
-
-Project Ideas/Proposal for Machine Learning 5367
 
 Project Descripition:
 Develop and implement a machine learning sentiment analysis that analyzes large fashion brands Twitter data. The sentiment analysis will be used to make informed busienss decisions and help guide executives on fashion trends and marketing efforts. By utilizing a model that is trained to analyze sentiment around the highest trending fashion of major fashion brands and testing the model machine learning can better enhance the targeted marketing. 
@@ -21,9 +17,8 @@ Large Fashion Companies Twitter Handles for Analysis:
 8. Mango - @Mango
 
 Useful Features:
-Date range will be since 2020-03-01 
-We will use an index of '1500' values.
-We will be able to put together training and test data sets based on a list of dictionaries that correspond to sentament values using a scale of -1 to 1... Or we could do 1-10, depending on what looks better.
-Data Sources:
+Date Range: 2020-03-01 to Present 
+Sampling: Index of '1500' values
 
-Data Source: We will access twitter data through an API to gain the most current data based on public tweets to input into our model.
+Data Sources:
+Twitter data API access to public tweets of the above listed companies
