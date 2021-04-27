@@ -16,12 +16,24 @@ A local startup company of >75 employees that sells fast fashion items is lookin
 7. Fendi
 8. Hermes
 
-
-
 ## Useful Features:
 Date Range: **2020-11-01 to Present**
-Sampling: Index of **'300'** values
+Sampling: Index of **'10,000'** values
+Dataset Columns:
+- Polarity
+- Tweet
+- Fashion Brand Name
 
 ## Data Sources:
 Conversion of live tweets through Twitter API to dataframe
-Final data source is xlsx file - **fastfashion_datasource.csv**
+Final data source is xlsx file - **twitter_10k_data.csv**
+
+## Model Description:
+The model uses a Naive Bayes classifier to learn and predict the sentiment of the data. The Naive Bayes classifier model is trained using the indexed polarity value as teh labelCol and the vectorized rescaled data as the featuresCol. The raw data is processed by undergoing tokenization, removal of numbers and stopwords, and stemming the data. The processed data is then hashed and rescaled using TF-IDF to vectorize and estimate. Then predicted values are tested for accuracy. 
+
+## Model Evaluation:
+Accuracy of the Model = 0.9145
+
+##Conclusion:
+Overall output and accuracy has met a satisfactory mark. Further work would include to develop a more robust training dataset or benchmark training set to make the model more accurate. The model that was built using Naive Bayes did have a higher accuracy then the intial use of TextBlob. 
+
