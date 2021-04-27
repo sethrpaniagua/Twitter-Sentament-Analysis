@@ -34,6 +34,6 @@ The model uses a Naive Bayes classifier to learn and predict the sentiment of th
 ## Model Evaluation:
 Accuracy of the Model = 0.9145
 
-##Conclusion:
+## Conclusion:
 Overall output and accuracy has met a satisfactory mark. Further work would include to develop a more robust training dataset or benchmark training set to make the model more accurate. The model that was built using Naive Bayes did have a higher accuracy then the intial use of TextBlob. 
 
