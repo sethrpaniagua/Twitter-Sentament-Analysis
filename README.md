@@ -16,24 +16,51 @@ A local startup company of >75 employees that sells fast fashion items is lookin
 7. Fendi
 8. Hermes
 
+
+## Training Data Sets:
+
+### Womens Clothing E-Commerce Reviews
+Columns:
+Clothing, ID, Age, Title, Review Text, Rating, Recommended IND, Positive Feedback Count, Division Name, Department Name, Class Name
+
+### Sentiment 140
+Columns:
+Polarity, TweetID, Date, Query, User, Text
+
+
 ## Useful Features:
+### Master Data Set
 Date Range: **2020-11-01 to Present**
 Sampling: Index of **'10,000'** values
-Dataset Columns:
+Master Dataset Columns:
 - Polarity
 - Tweet
 - Fashion Brand Name
 
+### Sentiment 140
+-Polarity Column to Base Sentiment
+-Review Text Used for Training
+-Training Data: 102
+-Testing Data: 396
+
+### Womens Clothing E-Commerce Reviews
+-Rating Column to Base Sentiment
+-Review Text Used for Training
+-Training Data: 3,114
+-Testing Data: 12,546
+
 ## Data Sources:
-Conversion of live tweets through Twitter API to dataframe
-Final data source is xlsx file - **twitter_10k_data.csv**
+-Conversion of live tweets through Twitter API to dataframe
+-Final data source is xlsx file - **twitter_10k_data.csv**
+-Training data sourced from online
 
 ## Model Description:
-The model uses a Naive Bayes classifier to learn and predict the sentiment of the data. The Naive Bayes classifier model is trained using the indexed polarity value as teh labelCol and the vectorized rescaled data as the featuresCol. The raw data is processed by undergoing tokenization, removal of numbers and stopwords, and stemming the data. The processed data is then hashed and rescaled using TF-IDF to vectorize and estimate. Then predicted values are tested for accuracy. 
+The model uses a Naive Bayes classifier to learn and predict the sentiment of the data. The Naive Bayes classifier model is trained using the indexed polarity value as the labelCol and the vectorized rescaled data as the featuresCol. The raw data is processed by undergoing tokenization, removal of numbers and stopwords, and stemming the data. The processed data is then hashed and rescaled using TF-IDF to vectorize and estimate. Then predicted values are tested for accuracy.
 
 ## Model Evaluation:
-Accuracy of the Model = 0.9145
+Accuracy Trained on Womens Clothing Reviews data = 0.56
+Accuracy Trained on Sentiment140 data = .40
 
 ## Conclusion:
-Overall output and accuracy has met a satisfactory mark. Further work would include to develop a more robust training dataset or benchmark training set to make the model more accurate. The model that was built using Naive Bayes did have a higher accuracy then the intial use of TextBlob. 
+Overall accuracy and ouput potrayed results that would not be desirable from a business standpoint, this would be considered a Version1 software that would be modified to the final Version over time after application prior to industrial use. It is seen that we hit 56% with the Clothing Reviews Data indicating that there is variance depending on the training dataset and this would lead to further research in expanding the testing dataset as well as viewing on options when training the model. 
 
